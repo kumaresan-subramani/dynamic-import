@@ -17,6 +17,9 @@ let data: any = [ {
   ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
 },]
 
+document.getElementById('element').addEventListener("click", function(){
+  check();
+});
 
 function check() {
 
@@ -32,6 +35,6 @@ import("@syncfusion/ej2-grids").then((Grid) => {
     ],
     height: 315
   });
-  grid.appendTo('#Grid');
+  grid.appendTo('#grid');
 });
 }
